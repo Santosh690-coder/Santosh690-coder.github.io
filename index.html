@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body id="body-element" style="background-color: white;">
+    <div class="color-body">
+        <h3>Change Background color:</h3>
+
+        <select id="color-picker">
+            <option value="white">White</option>
+            <option value="whitesmoke">Whitesmoke</option>
+            <!-- <option value="black">Black</option> -->
+            <option value="grey">Grey</option>
+            <option value="Gray">Gray</option>
+            <option value="silver">Silver</option>
+            <option value="Brown">Brown</option>
+            <option value="green">Green</option>
+            <option value="yellowgreen">Yellowgreen</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Lime">Lime</option>
+            <option value="red">Red</option>
+            <option value="Orange">Orange</option>
+            <option value="aqua">Aqua</option>
+            <option value="Aquamarine">Aquamarine</option>
+            <option value="Purple">Purple</option>
+            <option value="maroon">Maroon</option>
+            <option value="Wheat">Wheat</option>
+            <option value="Bisque">Bisque</option>
+
+        </select>
+        <h6 id="bg-col">(Black Colour is not there )</h6>
+
+    </div>
+
+    <div class="midbody">
+
+        <button id="paragraph">Create a Paragraph/Line</button>
+
+        <br>
+        <h3 id="parag">(You will get the paragraph at the bottom of the page)</h3>
+
+
+
+        <!-- <button id="h1">Create an H1</button> <br>
+            <button id="h2">Create an H2</button><br>
+            <button id="h3">Create an H3</button><br>
+            <button id="h4">Create an H4</button><br>
+            <button id="h5">Create an H5</button><br>
+            <button id="h6">Create an H6</button><br> -->
+
+        <button id="hStyle"><select id="hbuttons">
+                <option value="None">None</option>
+                <option value="h1">Create an H1</option>
+                <option value="h2">Create an H2</option>
+                <option value="h3">Create an H3</option>
+                <option value="h4">Create an H4</option>
+                <option value="h5">Create an H5</option>
+                <option value="h6">Create an H6</option>
+
+            </select>
+        </button>
+        <h3 id="hb">(You will get the heading at the bottom of the page)</h3>
+    </div>
+    <header>
+        <h1>Lorem Ipsum Generator</h1>
+    </header>
+
+    <main>
+        <div class="options">
+            <div class="paragraphs">
+                <label for="paragraphs">
+                    Paragraphs:
+                </label>
+                <input type="range" id="paragraphs" min="1" max="50" value="1">
+                <span id="paragraphsValue">
+                    1
+                </span>
+            </div>
+            <br><br>
+            <div class="words">
+                <label for="words">
+                    Words per paragraph:
+                </label>
+                <input type="range" id="words" min="1" max="100" value="10">
+                <span id="wordsValue">
+                    10
+                </span>
+            </div>
+            <br><br>
+            <div class="tags">
+                <label for="tags">
+                    Tag:
+                </label>
+                <select id="tags"></select>
+            </div>
+            <div class="include">
+                <label for="include">
+                    Include HTML:
+                </label>
+                <select id="include">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <button id="generate">
+                Genrate Lorem Ipsum
+            </button>
+        </div>
+        <div class="output">
+
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
